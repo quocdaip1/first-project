@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2a3c8945b0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Web singer</title>
+
+   
+<body>  
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <h2 class="text-logo">Music TN</h2>
+            </div>
+            <div class="menu">
+                <ul class="list-menu">
+                    <li class="list"><a href="#">Home</a></li>
+                    <li class="list"><a href="#">Products</a></li>
+                    <li class="list"><a href="#">Singers</a></li>
+                    <li class="list"><a href="#">Contact</a></li>
+                    <li class="list"><a href="#">About</a></li>
+                </ul>
+            </div>  
+        </div>
+        <section id="banner">
+            <div class="intro">
+                <h1>Music can heal</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Nulla doloremque soluta officia, veniam recusandae ea minus at quas sint, 
+                    incidunt, explicabo ullam voluptatibus. 
+                    Porro dolores asperiores laudantium neque minus quidem.</p>
+                    
+                    <div class="learn-more">
+                        <a href="#">Learn more</a>
+                    </div>
+            </div>
+            <div class="slider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/photo-1-1585500928009394956628 (1).jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/photo-1-158555028375632185746.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/isaac-54327.jpg" />
+                      </div>
+                    </div>
+            </div>
+        </section>
+        <div class="icons-login">
+            <ul class="icons">
+                <li class="icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="icon"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="adsinger">
+          
+            <div class="boxsinger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="textsinger">
+                 <h2>NamKun.pro</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque pariatur velit 
+                  laboriosam qui, quos fuga corrupti assumenda inventore quibusdam eum
+                   maiores nostrum animi minima temporibus quis, itaque vitae molestiae aliquid.</p>
+                   <a href="#">Learn more</a>
+              </div>         
+                <div class="imagesinger">
+                    <img src="images/casi.png" alt="">
+                </div>    
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>   
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+</body>
+</html>

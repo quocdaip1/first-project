@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background: #474787;
+    position: relative;
+    
+   
+}
+header::before{
+    clip-path: circle(50% at 100% 0%);
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #00d2d3;
+    position: absolute;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header .nav {
+    display: flex;
+    padding: 50px; 
+    font-family: 'Lobster', cursive;
+
+    
+}
+header .nav .menu .list-menu{
+    display: flex;
+    padding-left: 100px;
+    
+}
+
+header .nav .menu .list-menu .list a{
+    padding: 0 25px;
+    color: white;
+}
+header .nav .menu{
+    width: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    
+}
+header .nav .logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+header .nav .logo .text-logo{
+    padding-left: 50px;
+    color: #fff;
+    font-size: 32px;
+    
+} 
+header #banner{
+    display: flex;
+    height: 50%;
+
+} 
+header #banner .slider{
+    width: 50%;
+    height: 100%;
+}
+
+
+header #banner .intro{
+    width: 50%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 102px;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+
+}
+header #banner .intro h1{
+    font-size: 50px;
+}
+
+header #banner .intro p{
+    line-height: 20px;
+    padding: 10px 0;
+    width: 60%;
+}
+
+header #banner .intro .learn-more{
+    width: 130px;
+    height: 40px;
+    background: linear-gradient(to right, #00d2d3 ,#1a5b95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+header #banner .intro a{
+    color: #fff;
+}
+
+header .icons-login{
+    position: absolute;
+    padding:20px 100px;
+    top: 90%;
+}
+header .icons-login .icons{
+    display: flex;
+    position: relative;
+}
+header .icons-login .icons .icon{
+    width: 50px; 
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; 
+}
+header .icons-login .icons .icon:hover{
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: ) {
+
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+

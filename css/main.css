@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .adsinger{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    width: 100%;
+    height: 100%;
+    background: #0a3d62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}   
+
+main .boxsinger::before{
+    clip-path: circle(30% at 50% 50%);
+    height:100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+    background: #fff;
+    transition: 1s;
+}
+main .boxsinger:hover::before{
+    clip-path: circle(100% at 50% 50%);
+}
+main .boxsinger:hover img{
+    position: absolute;
+    top:100px;
+    left: 100px;
+    
+}
+main .boxsinger{
+    width: 50%;
+    height: 50%;
+    background: red;
+    background: linear-gradient(to right, rgb(3, 248, 248) , rgb(79, 223, 79));
+    position: relative;
+    overflow: hidden;
+}
+
+
+main .textsinger{  
+    padding: 40px;
+    color: #fff;
+    
+}
+
+main .textsinger h2{
+    font-size: 39px;
+    margin-bottom: 20px;
+}
+main .adsinger .imagesinger{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s;
+}
+
+main .adsinger span:nth-child(1){
+    width: 100%;
+    height: 3px;
+    background: blue;
+    display: block;
+    animation: span1 1.5s linear infinite;
+    position: absolute;
+}
+
+@keyframes span1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+main .adsinger span:nth-child(2){
+    width: 3px;
+    height: 100%;
+    background: blue;
+    display: block;
+    animation: span2 1.5s linear infinite;
+    position: absolute;
+    right:0%;
+}
+@keyframes span2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+main .adsinger span:nth-child(3){
+    width: 3px;
+    height: 100%;
+    background: blue;
+    display: block;
+    animation: span3 1.5s linear infinite;
+    position: absolute;
+
+}
+@keyframes span3{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+main .adsinger span:nth-child(4){
+    width: 100%;
+    height: 3px;
+    background: blue;
+    display: block;
+    animation: span4 1.5s linear infinite;
+    position: absolute;
+    bottom: 0;
+}
+@keyframes span4{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
