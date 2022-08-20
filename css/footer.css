@@ -1,0 +1,100 @@
+footer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/dddd-min.jpg");
+    position: relative;
+    
+}
+
+
+footer .contact-info{
+    display: flex;
+    width: 60%;
+    height: 50%;
+    background: #fff;
+    transform: translateY(20%);
+    
+}
+footer .contact i{
+    padding-right: 8px;
+}
+footer .contact-info .icons-contact a{
+    font-size: 25px;
+    margin-right: 10px;
+    color: #292870;
+}
+footer .contact h2{
+    padding-top: 30px;
+    font-size: 30px;
+}
+footer .contact p,
+footer .contact h2,
+footer .contact .icons-contact{
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: #292870;
+}
+footer .contact p{
+    line-height: 25px;
+    
+    
+}
+footer .contact{
+    width: 50%;
+    
+}
+
+
+
+footer .info{
+    width: 50%;
+}
+
+input[ type="text"]:nth-child(1){
+    margin-top: 30px;
+}
+input[ type="text"],
+input[ type="email"]{
+    width: 90%;
+    margin-bottom: 5px;
+    height: 30px;
+    background: orange;
+    border: none;
+}
+::placeholder{
+    color: #fff;
+    padding-left: 10px;
+}
+input[type="text"]:nth-child(3){
+    height: 110px;
+}
+
+footer .info button{
+    width: 90%;
+    height: 40px;
+    border: none;
+    background:#292870;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+footer .info button:hover{
+    background: #22216d;
+}
+
+footer .copyright{
+    position: absolute;
+    top:100%;
+    width: 100%;
+    height: 100px;
+    background: #474787;
+    display: flex;
+    align-items: center;
+}
+footer .copyright p{
+    padding-left: 20px; 
+    color: #fff;  
+}
