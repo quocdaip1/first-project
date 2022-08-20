@@ -102,7 +102,8 @@ header #banner .intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
-     
+    z-index: 2; 
+
 
 }
 header #banner .intro h1{
@@ -152,15 +153,23 @@ header .icons-login .icons .icon:hover{
     transform: translateY(-10px);
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 900px) {
     header .icons-login{
-        top:85%
+        top:90%;
     }
     header .slider .swiper .swiper-slide{
         width: 200px;
         height: 300px;
     }
+
+    header #banner .intro,
+    header #banner .slider{
+        width: 100%;
+    }
+    
 }
+
+
 
 
 @media screen and (max-width: 360px) {
